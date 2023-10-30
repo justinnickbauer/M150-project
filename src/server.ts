@@ -5,7 +5,7 @@ import nunjucks from 'nunjucks';
 const db = require('../db.json');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Stripe = require('stripe');
-const domainRoot = 'http://localhost:3000';
+const domainRoot = 'http://ridiculous-and-fitch.justinbauer.ch';
 const app = express();
 const stripe = Stripe(
   'sk_test_51O6yyFFY2Rc2GqiuvG2NJyEMyVnalBO4GGZfaElEI7fBzRJ4dkHZzIH6KzBKmIB1Ms2PVVvUeO04KYmsUrPjdgV500B5TaGSnN',
