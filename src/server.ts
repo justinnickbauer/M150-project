@@ -5,7 +5,7 @@ import nunjucks from 'nunjucks';
 const db = require('../db.json');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Stripe = require('stripe');
-const domainRoot = 'http://ridiculous-and-fitch.justinbauer.ch';
+const domainRoot = 'https://ridiculous-and-fitch.justinbauer.ch'; 
 const app = express();
 const stripe = Stripe(
   'sk_test_51O6yyFFY2Rc2GqiuvG2NJyEMyVnalBO4GGZfaElEI7fBzRJ4dkHZzIH6KzBKmIB1Ms2PVVvUeO04KYmsUrPjdgV500B5TaGSnN',
@@ -46,7 +46,7 @@ app.post('/buy/items/', async (req, res) => {
           product_data: {
             name: item.name,
             description: item.description,
-            images: ["ridiculous-and-fitch.justinbauer.ch"+item.picture],
+            images: ["https://ridiculous-and-fitch.justinbauer.ch"+item.picture],
           },
           unit_amount: item.price,
         },
